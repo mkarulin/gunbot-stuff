@@ -51,7 +51,6 @@ $count = count($pairs);
 $index = 0;
 $arrayCount = 1;
 foreach ($pairs as $pair) {
-    echo $index . '<=' . $count / $length . "\n\r";
     if ($index <= intval($count / $length)) {
         $array['pairs' . $arrayCount]['binance']['BTC-' . $pair] = ['strategy' => $strategy, 'override' => []];
         $index++;
